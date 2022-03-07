@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="flex justify-center">
-        <div class="w=4/12 bg-white p-6 rounded-lg">
+        <div class="w=6/12 bg-white p-6 rounded-lg">
             <form action="{{ route('register') }}" method="post">
                 <div class="mb-4">
                     <label for="name" class="sr-only">Name</label>
@@ -28,6 +28,9 @@
                     <label for="password_confirmation" class="sr-only">Password again</label>
                     <input type="password" name="password_confirmation" id="password_confirmation" placeholder="Repeat your password"
                         class="bg-gray-100 border-2 w-full p-4 rounded-lg" value="">
+                </div>
+                <div class="mb-4">
+                    <button type="submit" class="bg-blue-400 text-white rounded-lg">Submit</button>
                 </div>
             </form>
         </div>
