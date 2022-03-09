@@ -11,6 +11,7 @@
             @method('DELETE')
             <button type="submit" class="text-blue-500">Delete</button>
         </form>
+        <a href="{{ route('posts.show', $post) }}">View</a>
         @endcan
     </div>
 
